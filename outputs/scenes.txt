@@ -1,0 +1,43 @@
+```screenplay
+SCENE 1
+
+INT. BARNABY'S CAVE - DAY
+
+Barnaby's spotless cave shows how tidy he is. Barnaby Bear brushes his fur, proud of his clean home.
+
+SCENE 2
+
+EXT. FOREST - DAY
+
+Barnaby walks to Finley's messy den through the woods. Barnaby is on his way to see his best friend, Finley.
+
+SCENE 3
+
+EXT. FINLEY'S DEN - DAY
+
+Finley's messy den is full of scattered toys and leaves. Finley Fox builds an acorn tower, unconcerned about the mess.
+
+SCENE 4
+
+EXT. FINLEY'S DEN - LATER
+
+Barnaby tries to tidy Finley's den, but Finley doesn't want him to. Barnaby arrives with a broom, determined to clean.
+
+SCENE 5
+
+EXT. FINLEY'S DEN - CONTINUOUS
+
+Barnaby accidentally destroys Finley's acorn tower while cleaning. Barnaby's cleaning goes wrong when he ruins Finley's tower.
+
+SCENE 6
+
+EXT. FINLEY'S DEN - CONTINUOUS
+
+Barnaby and Finley make up and decide to play in the messy den. The friends realize playing together is more fun than tidying.
+
+SCENE 7
+
+EXT. FOREST - DAY
+
+Barnaby and Finley walk together, accepting each other's differences. Barnaby and Finley walk, showing their strong friendship.
+```

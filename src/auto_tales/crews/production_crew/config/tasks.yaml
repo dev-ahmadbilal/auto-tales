@@ -1,0 +1,129 @@
+story_writing:
+  name: story_writing
+  agent: StoryWriter
+  description: >
+    Expand a short story idea into a complete narrative for children aged 5 to 10. The story should be fun, engaging, easy to follow, and include a simple moral or lesson. Avoid magical elements or complex abstract themes.
+  expected_output: full_story
+  input_keys:
+    - story_idea
+  output_keys:
+    - full_story
+  output_file: outputs/full_story.txt
+
+script_writing:
+  name: script_writing
+  agent: ScriptWriter
+  description: >
+    Convert the children's story into a screenplay format with simple dialogue, actions, and transitions. The script should be suitable for animation or voiceover and easily understood by young children.
+  expected_output: script
+  input_keys:
+    - full_story
+  output_keys:
+    - script
+  depends_on:
+    - story_writing
+  output_file: outputs/script.txt
+
+scene_splitting:
+  name: scene_splitting
+  agent: SceneSplitter
+  description: >
+    Divide the script into short, labeled scenes. Each scene should include time-of-day, location, and a one-sentence summary to guide visual storytelling for kids.
+  expected_output: scenes
+  input_keys:
+    - script
+  output_keys:
+    - scenes
+  depends_on:
+    - script_writing
+  output_file: outputs/scenes.txt
+
+emotion_extraction:
+  name: emotion_extraction
+  agent: EmotionExtractor
+  description: >
+    For each scene, extract the primary emotions, voice tones, facial expressions, and gestures of each character. Emotions should be clear, simple, and easily understood by children (e.g., happy, sad, surprised, excited).
+  expected_output: scene_emotions
+  input_keys:
+    - scenes
+  output_keys:
+    - scene_emotions
+  depends_on:
+    - scene_splitting
+  output_file: outputs/scene_emotions.txt
+
+cast_planning:
+  name: cast_planning
+  agent: CastPlanner
+  description: >
+    Create a cast of child-friendly characters. For each, define a name, age, gender, personality, visual appearance, and voice traits. Ensure diversity and emotional relatability.
+  expected_output: cast_profiles
+  input_keys:
+    - scenes
+    - scene_emotions
+  output_keys:
+    - cast_profiles
+  depends_on:
+    - emotion_extraction
+  output_file: outputs/cast_profiles.txt
+
+voiceover_generation:
+  name: voiceover_generation
+  agent: VoiceoverGenerator
+  description: >
+    Generate expressive and playful voiceovers for each character using the script, cast profiles, and scene emotions. Ensure clarity, friendly pacing, and emotional tone appropriate for young listeners.
+  expected_output: voiceover
+  input_keys:
+    - script
+    - cast_profiles
+    - scene_emotions
+  output_keys:
+    - voiceover
+  depends_on:
+    - cast_planning
+  output_file: outputs/voiceover.txt
+
+video_synthesis:
+  name: video_synthesis
+  agent: VideoSynthesizer
+  description: >
+    Create simple, colorful video clips for each scene. Use the script, cast visuals, and voiceovers to produce child-friendly animations or renders with smooth transitions and bright visuals.
+  expected_output: video_segments
+  input_keys:
+    - scenes
+    - cast_profiles
+    - voiceover
+  output_keys:
+    - video_segments
+  depends_on:
+    - voiceover_generation
+  output_file: outputs/video_segments.txt
+
+final_assembly:
+  name: final_assembly
+  agent: FinalAssembler
+  description: >
+    Assemble all scene clips into a complete children's video. Ensure visual and audio coherence, soft transitions, and pacing that keeps young viewers engaged.
+  expected_output: final_video
+  input_keys:
+    - video_segments
+  output_keys:
+    - final_video
+  depends_on:
+    - video_synthesis
+  output_file: outputs/final_video.txt
+
+feedback_processing:
+  name: feedback_processing
+  agent: FeedbackProcessor
+  description: >
+    Analyze feedback from a parent, teacher, or reviewer. Determine which step(s) in the pipeline need revision, and suggest improvements focused on story clarity, appropriateness, and emotional engagement for children.
+  expected_output: revised_task_list
+  input_keys:
+    - user_feedback
+    - final_video
+  output_keys:
+    - revised_task_list
+  depends_on:
+    - final_assembly
+  output_file: outputs/revised_task_list.txt

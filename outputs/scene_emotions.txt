@@ -1,0 +1,132 @@
+```json
+{
+  "scene_emotions": [
+    {
+      "scene": 1,
+      "setting": "INT. BARNABY'S CAVE - DAY",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Happy, Proud",
+          "voice_tone": "Cheerful",
+          "facial_expression": "Smiling",
+          "gesture": "Brushing fur carefully"
+        }
+      ]
+    },
+    {
+      "scene": 2,
+      "setting": "EXT. FOREST - DAY",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Friendly",
+          "voice_tone": "Normal",
+          "facial_expression": "Neutral",
+          "gesture": "Walking purposefully"
+        }
+      ]
+    },
+    {
+      "scene": 3,
+      "setting": "EXT. FINLEY'S DEN - DAY",
+      "characters": [
+        {
+          "character": "FINLEY FOX",
+          "emotion": "Playful, Happy",
+          "voice_tone": "Excited",
+          "facial_expression": "Grinning",
+          "gesture": "Building tower"
+        },
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Slightly Strained",
+          "voice_tone": "Concerned",
+          "facial_expression": "Slight frown",
+          "gesture": "Pointing to blocks"
+        }
+      ]
+    },
+    {
+      "scene": 4,
+      "setting": "EXT. FINLEY'S DEN - LATER",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Determined",
+          "voice_tone": "Firm",
+          "facial_expression": "Serious",
+          "gesture": "Holding broom firmly"
+        },
+        {
+          "character": "FINLEY FOX",
+          "emotion": "Startled, Unhappy",
+          "voice_tone": "Surprised",
+          "facial_expression": "Wide-eyed",
+          "gesture": "Backing away slightly"
+        }
+      ]
+    },
+    {
+      "scene": 5,
+      "setting": "EXT. FINLEY'S DEN - CONTINUOUS",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Surprised, Anxious",
+          "voice_tone": "Startled",
+          "facial_expression": "Eyes widening",
+          "gesture": "Sweeping motions gone awry"
+        },
+        {
+          "character": "FINLEY FOX",
+          "emotion": "Sad, Angry",
+          "voice_tone": "Crying",
+          "facial_expression": "Tears, frowning",
+          "gesture": "Pointing at scattered acorns"
+        }
+      ]
+    },
+    {
+      "scene": 6,
+      "setting": "EXT. FINLEY'S DEN - CONTINUOUS",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Sorry, Regretful",
+          "voice_tone": "Apologetic",
+          "facial_expression": "Drooping ears, sad eyes",
+          "gesture": "Kneeling, trying to help"
+        },
+        {
+          "character": "FINLEY FOX",
+          "emotion": "Sniffling, Thoughtful, Happy",
+          "voice_tone": "Quiet, then brightening",
+          "facial_expression": "Tearful, then slight smile",
+          "gesture": "Wiping tears, then looking around"
+        }
+      ]
+    },
+    {
+      "scene": 7,
+      "setting": "EXT. FOREST - DAY",
+      "characters": [
+        {
+          "character": "BARNABY BEAR",
+          "emotion": "Content, Accepting",
+          "voice_tone": "Normal",
+          "facial_expression": "Smiling gently",
+          "gesture": "Walking side-by-side"
+        },
+        {
+          "character": "FINLEY FOX",
+          "emotion": "Happy, Relaxed",
+          "voice_tone": "Normal",
+          "facial_expression": "Smiling",
+          "gesture": "Walking side-by-side"
+        }
+      ]
+    }
+  ]
+}
+```
